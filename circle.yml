@@ -1,0 +1,12 @@
+machine:
+  node:
+    version: 4.2.1
+test:
+  override:
+    - mkdir -p $CIRCLE_TEST_REPORTS/mocha
+    - ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- --reporter mocha-junit-reporter --reporter-options mochaFile=$CIRCLE_TEST_REPORTS/mocha/test-results.xml --recursive
+  post:
+    - mv coverage/lcov-report $CIRCLE_ARTIFACTS/coverage
+    - npm install eslint
+    - mkdir $CIRCLE_ARTIFACTS/eslint
+    - ./node_modules/.bin/eslint --debug --format html --output-file $CIRCLE_ARTIFACTS/eslint/index.html .

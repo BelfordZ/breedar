@@ -1,0 +1,59 @@
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      2,
+      "single"
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "semi": [
+      2,
+      "always"
+    ],
+    "no-extra-semi": 2,
+    "no-spaced-func": 2,
+    "keyword-spacing": 2,
+    "space-before-blocks": 2,
+    "space-infix-ops": 2,
+    "no-mixed-spaces-and-tabs": 2,
+    "no-console": 2,
+    "no-extra-parens": 2,
+    "no-unused-vars": [
+      2,
+      {
+        "args": "none"
+      }
+    ],
+    "no-undef": 2,
+    "no-octal": 2,
+    "no-redeclare": 2,
+    "arrow-parens": 2,
+    "arrow-spacing": 2,
+    "generator-star-spacing": 2,
+    "no-confusing-arrow": 2,
+    "no-constant-condition": 2,
+    "no-class-assign": 2,
+    "no-const-assign": 2,
+    "no-dupe-class-members": 2,
+    "no-var": 2,
+    "object-shorthand": 2,
+    "prefer-arrow-callback": 2,
+    "prefer-const": 2,
+    "prefer-template": 2,
+    "require-yield": 2
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  }
+}

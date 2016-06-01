@@ -1,0 +1,5 @@
+instrumentation:
+    excludes:
+     - server.js
+     - main/application.js
+     - main/repositories/*
